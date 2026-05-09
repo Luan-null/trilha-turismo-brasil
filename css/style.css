@@ -1,4 +1,90 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --verde-brasil: #2e7d32;
+  --verde-claro: #a5d6a7;
+  --amarelo-solar: #fbc02d;
+  --azul-ceu: #0288d1;
+  --areia: #f5e6c8;
+  --marrom-terra: #6d4c41;
+  --branco-neve: #ffffff;
+  --cor-texto: #263238;
+
+  --fonte-texto: "Inter", sans-serif;
+  --fonte-titulo: "Lora", serif;
+}
+
+body {
   margin: 0;
   padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+
+  font-family: var(--fonte-texto);
+  color: var(--cor-texto);
+  line-height: 1.6;
 }
+
+h1,
+h2,
+h3 {
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+header nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--branco-neve);
+}
+
+header img {
+  width: 200px;
+}
+
+.botao {
+  background-color: var(--verde-brasil);
+  color: var(--branco-neve);
+  padding: 8px 24px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+
+.hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assets/img/home/icone-animal.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5%;
+}
+ manda no zap
