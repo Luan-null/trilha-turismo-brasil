@@ -41,7 +41,7 @@ img {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 0 5%;
 
   position: absolute;
@@ -53,37 +53,89 @@ header nav {
   display: flex;
   gap: 32px;
   align-items: center;
+  margin-top: 20px;
 }
 
 header nav a {
+  padding: 8px 24px;
+  border-radius: 50px;
   text-decoration: none;
   font-weight: 500;
   color: var(--branco-neve);
+  transition:
+    background-color 0.3s ease-in-out,
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+
+header nav a:hover {
+  background-color: var(--verde-brasil);
+  color: var(--branco-neve);
+  padding: 8px 24px;
+  border-radius: 50px;
+  box-shadow:
+    0 0 8px 2px rgba(0, 0, 0, 0.438),
+    0 0 28px 6px rgba(0, 0, 0, 0.384);
+  transform: translateY(-2px);
 }
 
 header img {
   width: 200px;
 }
 
-.botao {
+.ativo {
   background-color: var(--verde-brasil);
   color: var(--branco-neve);
   padding: 8px 24px;
   border-radius: 50px;
   display: inline-block;
+  box-shadow:
+    0 0 8px 2px rgba(0, 0, 0, 0.438),
+    0 0 28px 6px rgba(0, 0, 0, 0.384);
 }
-
 
 .hero {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../assets/img/home/hero.png");
+    url("../assets/img/home/hero.webp");
   background-size: cover;
-  background-position: center;
-  height: 100vh;
+  background-position: bottom;
+  height: 80vh;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 5%;
+  color: var(--branco-neve);
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  max-width: 600px;
+  margin: 100px 0 0 0;
+}
+
+.hero p {
+  font-size: 1.35rem;
+  max-width: 500px;
+  margin: 10px 0 32px 0px;
+}
+
+.botao-principal {
+  background-color: var(--verde-brasil);
+  color: var(--branco-neve);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 12px 32px;
+  border-radius: 50px;
+  width: fit-content;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease-in-out;
+}
+
+.botao-principal:hover {
+  opacity: 0.9;
+  transform: translateY(-2px) scale(1.04);
 }
