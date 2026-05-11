@@ -15,6 +15,10 @@
   --fonte-titulo: "Lora", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -36,6 +40,11 @@ h3 {
 img {
   max-width: 100%;
   display: block;
+}
+
+.logo {
+  padding: 18px 0;
+  width: 200px;
 }
 
 header {
@@ -100,6 +109,36 @@ header img {
     url("../assets/img/home/hero.webp");
   background-size: cover;
   background-position: bottom;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5%;
+  color: var(--branco-neve);
+}
+
+.destino-hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assets/img/home/hero-destino.webp");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5%;
+  color: var(--branco-neve);
+}
+
+.dica-hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assets/img/home/hero-dica.webp");
+  background-size: cover;
+  background-position: top;
   height: 80vh;
 
   display: flex;
