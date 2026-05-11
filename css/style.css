@@ -4,12 +4,12 @@
 /* RESET GERAL */
 :root {
   --verde-brasil: #2e7d32;
-  --verde-claro: #a5d6a7;
+  --verde-claro: #9cc79e3d;
   --amarelo-solar: #fbc02d;
   --azul-ceu: #0288d1;
   --areia: #f5e6c8;
   --marrom-terra: #6d4c41;
-  --branco-neve: #ffffff;
+  --branco-neve: #f3f3f3;
   --cor-texto: #263238;
 
   --fonte-texto: "Inter", sans-serif;
@@ -220,7 +220,19 @@ header img {
 /* DESTINOS EM DESTAQUE */
 
 .destinos-destaque {
-  padding: 80px 5%;
+  padding: 5px 5%;
   text-align: center;
   background-color: var(--verde-claro);
+}
+
+.destinos-destaque h2 {
+  color: var(--verde-brasil);
+  font-size: 2.5rem;
+}
+
+.cards-destino {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 48px;
 }
