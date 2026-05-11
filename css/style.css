@@ -178,3 +178,11 @@ header img {
   opacity: 0.9;
   transform: translateY(-2px) scale(1.04);
 }
+
+.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 80px 5%;
+  gap: 40px;
+}
