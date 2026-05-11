@@ -207,7 +207,7 @@ header img {
 }
 
 .sobre-texto p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 16px;
 }
 
@@ -215,4 +215,12 @@ header img {
   flex: 1;
   display: flex;
   justify-content: flex-start;
+}
+
+/* DESTINOS EM DESTAQUE */
+
+.destinos-destaque {
+  padding: 80px 5%;
+  text-align: center;
+  background-color: var(--verde-claro);
 }
