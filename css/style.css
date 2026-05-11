@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+/* RESET GERAL */
 :root {
   --verde-brasil: #2e7d32;
   --verde-claro: #a5d6a7;
@@ -41,6 +42,8 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/* HEADER */
 
 .logo {
   padding: 18px 0;
@@ -102,6 +105,8 @@ header img {
     0 0 8px 2px rgba(0, 0, 0, 0.438),
     0 0 28px 6px rgba(0, 0, 0, 0.384);
 }
+
+/* HERO */
 
 .hero {
   background-image:
@@ -172,6 +177,9 @@ header img {
   transition:
     opacity 0.3s ease,
     transform 0.3s ease-in-out;
+  box-shadow:
+    0 0 8px 2px rgba(0, 0, 0, 0.438),
+    0 0 28px 6px rgba(0, 0, 0, 0.384);
 }
 
 .botao-principal:hover {
@@ -179,10 +187,32 @@ header img {
   transform: translateY(-2px) scale(1.04);
 }
 
+/* SOBRE O PROJETO */
+
 .sobre {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
-  padding: 80px 5%;
+  justify-content: center;
+  padding: 10px 5%;
   gap: 40px;
+}
+
+.sobre-texto {
+  flex: 1;
+}
+
+.sobre-texto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+.sobre-texto p {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.sobre-imagem {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
 }
