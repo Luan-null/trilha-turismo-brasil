@@ -1,234 +1,268 @@
 <!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Trilha Turismo Brasil</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Trilha Turismo Brasil</title>
-</head>
+  <body>
+    <header>
+      <div>
+        <a href="index.html">
+          <img
+            src="assets/img/logo/logo-ttb.webp"
+            alt="Logo da Trilha Turismo Brasil"
+            class="logo"
+          />
+        </a>
+      </div>
+      <menu>
+        <nav>
+          <a href="index.html" class="ativo">Início</a>
+          <a href="destinos.html">Destinos</a>
+          <a href="dicas.html">Dicas</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </menu>
+    </header>
+    <main>
+      <!-- Hero da página -->
+      <section class="hero">
+        <h1>
+          Explore o Brasil <br />
+          em uma só trilha
+        </h1>
+        <p>
+          Conheça destinos, culturas, sabores e paisagens de todas as regiões
+          brasileiras.
+        </p>
 
-<body>
-  <header>
-    <div>
-      <a href="index.html">
-        <img src="assets/img/logo/logo-ttb.webp" alt="Logo da Trilha Turismo Brasil" class="logo" />
-      </a>
-    </div>
-    <menu>
-      <nav>
-        <a href="index.html" class="ativo">Início</a>
+        <a href="destinos.html" class="botao-principal">Ver destinos</a>
+      </section>
+
+      <!-- Section sobre -->
+
+      <section class="sobre">
+        <div class="sobre-texto">
+          <h2>Sobre o projeto</h2>
+          <p>
+            O Trilha Turismo Brasil é um guia turístico criado para ajudar
+            pessoas a conhecerem melhor as regiões, estados e destinos
+            brasileiros.
+          </p>
+          <p>
+            Aqui, o você encontra informações sobre paisagens, culturas, comidas
+            típicas e pontos turísticos que mostram a riqueza e a diversidade do
+            nosso país.
+          </p>
+          <p>
+            Mais do que apresentar lugares, o projeto busca incentivar um olhar
+            mais curioso, consciente e valorizador sobre o turismo nacional.
+          </p>
+        </div>
+        <div class="sobre-imagem">
+          <img
+            src="assets/img/home/brasil-sobre-aquarela.webp"
+            alt="Ilustração do mapa do Brasil com destinos turísticos"
+          />
+        </div>
+      </section>
+
+      <!-- Section destinos -->
+
+      <section class="destinos-destaque">
+        <h2>Destinos em destaque</h2>
+        <div class="cards-destino">
+          <!-- Espiríto Santo -->
+          <a href="estados/espirito-santo.html" class="card-destino">
+            <img
+              src="assets/img/estados/espirito-santo/espirito-santo.webp"
+              alt="Paisagem turística do Espírito Santo"
+            />
+
+            <h3>Espírito Santo</h3>
+            <p>Praias tranquilas, montanhas e cultura capixaba</p>
+          </a>
+
+          <!-- Rio de janeiro -->
+          <a href="estados/rio-de-janeiro.html" class="card-destino">
+            <img
+              src="assets/img/estados/rio-de-janeiro/rio-de-janeiro.webp"
+              alt="Paisagem turística do Rio de Janeiro"
+            />
+
+            <h3>Rio de Janeiro</h3>
+            <p>Cidades icônicas, praias famosas e muita história.</p>
+          </a>
+
+          <!-- Bahia -->
+          <a href="estados/bahia.html" class="card-destino">
+            <img
+              src="assets/img/estados/bahia/bahia.webp"
+              alt="Paisagem turística da Bahia"
+            />
+
+            <h3>Bahia</h3>
+            <p>Cultura vibrante, praias paradisíacas e tradição.</p>
+          </a>
+
+          <!-- Amazonas -->
+          <a href="estados/amazonas.html" class="card-destino">
+            <img
+              src="assets/img/estados/amazonas/amazonas.webp"
+              alt="Paisagem turística do Amazonas"
+            />
+
+            <h3>Amazonas</h3>
+            <p>Natureza exuberante, rio, floresta e aventura.</p>
+          </a>
+
+          <!-- Santa Catarina -->
+          <a href="estados/santa-catarina.html" class="card-destino">
+            <img
+              src="assets/img/estados/santa-catarina/santa-catarina.webp"
+              alt="Paisagem turística de Santa Catarina"
+            />
+
+            <h3>Santa Catarina</h3>
+            <p>Praias, montanhas e cultura diversificada.</p>
+          </a>
+        </div>
+        <a href="destinos.html" class="botao-principal">
+          Ver todos os destinos
+        </a>
+        <br /><br />
+      </section>
+
+      <!-- Section dicas -->
+
+      <section class="dicas-home">
+        <h2>Dicas para viagem perfeita</h2>
+
+        <div class="cards-dicas">
+          <!-- Primeiro card -->
+          <article class="card-dica">
+            <div class="icone-dica">
+              <img
+                src="assets/img/home/icone-mala.webp"
+                alt="Icone de mala de viagem"
+              />
+            </div>
+
+            <div class="dica-conteudo">
+              <h3>Planejamento</h3>
+
+              <p>
+                Pesquise sobre o destino, clima, atrações e melhores épocas para
+                viajar.
+              </p>
+            </div>
+          </article>
+
+          <!-- Segundo card -->
+          <article class="card-dica">
+            <div class="icone-dica">
+              <img
+                src="assets/img/home/icone-camera.webp"
+                alt="Icone de camera fotográfica"
+              />
+            </div>
+
+            <div class="dica-conteudo">
+              <h3>Respeite a cultura local</h3>
+
+              <p>
+                Cada região tem suas histórias e tradições. Valorize e respeite
+                as diferenças culturais.
+              </p>
+            </div>
+          </article>
+
+          <!-- Terceiro card -->
+          <article class="card-dica">
+            <div class="icone-dica">
+              <img
+                src="assets/img/home/icone-animal.webp"
+                alt="Icone de animal selvagem"
+              />
+            </div>
+
+            <div class="dica-conteudo">
+              <h3>Viaje com consciência</h3>
+
+              <p>
+                Preserve a natureza, evite disperdícios e apoie o turismo
+                sustentável.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <!-- Logo footer -->
+
+      <div class="footer-logo">
+        <img
+          src="assets/img/home/footer-logo.webp"
+          alt="Ilustração do Brasil com a bandeira brasileira"
+        />
+
+        <p>
+          Seu guia completo pra descobrir o melhor do turismo nacional. Explore,
+          inspire-se e viva o Brasil em cada trilha!
+        </p>
+      </div>
+
+      <!-- Navegação footer -->
+
+      <div class="footer-nav">
+        <h3>Navegação</h3>
+
+        <a href="index.html">Início</a>
         <a href="destinos.html">Destinos</a>
         <a href="dicas.html">Dicas</a>
         <a href="contato.html">Contato</a>
-      </nav>
-    </menu>
-  </header>
-  <main>
-    <!-- Hero da página -->
-    <section class="hero">
-      <h1>
-        Explore o Brasil <br />
-        em uma só trilha
-      </h1>
-      <p>
-        Conheça destinos, culturas, sabores e paisagens de todas as regiões
-        brasileiras.
-      </p>
+      </div>
 
-      <a href="destinos.html" class="botao-principal">Ver destinos</a>
-    </section>
+      <!-- Redes sociais footer -->
+      <div class="footer-redes">
+        <h3>Redes sociais</h3>
 
-    <!-- Section sobre -->
+        <!-- Icones -->
+        <div class="rede-links">
+          <!-- Instagram -->
+          <a href="#" target="_blank" aria-label="Instagram"
+            ><img src="assets/img/home/icone-instagram.svg" alt="Instagram"
+          /></a>
+          <!-- Facebook -->
+          <a href="#" target="_blank" arial-label="Facebook"
+            ><img src="assets/img/home/icone-facebook.svg" alt="Facebook"
+          /></a>
+          <!-- Youtube -->
+          <a href="#" target="_blank" aria-label="Youtube"
+            ><img src="assets/img/home/icone-youtube.svg" alt="Youtube"
+          /></a>
+        </div>
+      </div>
 
-    <section class="sobre">
-      <div class="sobre-texto">
-        <h2>Sobre o projeto</h2>
+      <!-- Contato footer -->
+      <div class="footer-contato">
+        <h3>Contato</h3>
+
+        <p>Email: contato@TTBrasil.com</p>
+        <p>Projeto acadêmico — UFES</p>
+      </div>
+
+      <!-- Copy footer -->
+      <div class="footer-copy">
         <p>
-          O Trilha Turismo Brasil é um guia turístico criado para ajudar
-          pessoas a conhecerem melhor as regiões, estados e destinos
-          brasileiros.
-        </p>
-        <p>
-          Aqui, o você encontra informações sobre paisagens, culturas, comidas
-          típicas e pontos turísticos que mostram a riqueza e a diversidade do
-          nosso país.
-        </p>
-        <p>
-          Mais do que apresentar lugares, o projeto busca incentivar um olhar
-          mais curioso, consciente e valorizador sobre o turismo nacional.
+          &copy; 2026 Trilha Turismo Brasil. Projeto acadêmico desenvolvido para
+          a disciplina de Fundamentos de Programação Web.
         </p>
       </div>
-      <div class="sobre-imagem">
-        <img src="assets/img/home/brasil-sobre-aquarela.webp"
-          alt="Ilustração do mapa do Brasil com destinos turísticos" />
-      </div>
-    </section>
-
-    <!-- Section destinos -->
-
-    <section class="destinos-destaque">
-      <h2>Destinos em destaque</h2>
-      <div class="cards-destino">
-        <!-- Espiríto Santo -->
-        <a href="estados/espirito-santo.html" class="card-destino">
-          <img src="assets/img/estados/espirito-santo/espirito-santo.webp" alt="Paisagem turística do Espírito Santo" />
-
-          <h3>Espírito Santo</h3>
-          <p>Praias tranquilas, montanhas e cultura capixaba</p>
-        </a>
-
-        <!-- Rio de janeiro -->
-        <a href="estados/rio-de-janeiro.html" class="card-destino">
-          <img src="assets/img/estados/rio-de-janeiro/rio-de-janeiro.webp" alt="Paisagem turística do Rio de Janeiro" />
-
-          <h3>Rio de Janeiro</h3>
-          <p>Cidades icônicas, praias famosas e muita história.</p>
-        </a>
-
-        <!-- Bahia -->
-        <a href="estados/bahia.html" class="card-destino">
-          <img src="assets/img/estados/bahia/bahia.webp" alt="Paisagem turística da Bahia" />
-
-          <h3>Bahia</h3>
-          <p>Cultura vibrante, praias paradisíacas e tradição.</p>
-        </a>
-
-        <!-- Amazonas -->
-        <a href="estados/amazonas.html" class="card-destino">
-          <img src="assets/img/estados/amazonas/amazonas.webp" alt="Paisagem turística do Amazonas"/>
-
-          <h3>Amazonas</h3>
-          <p>Natureza exuberante, rio, floresta e aventura.</p>
-        </a>
-
-        <!-- Santa Catarina -->
-        <a href="estados/santa-catarina.html" class="card-destino">
-          <img src="assets/img/estados/santa-catarina/santa-catarina.webp" alt="Paisagem turística de Santa Catarina" />
-
-          <h3>Santa Catarina</h3>
-          <p>Praias, montanhas e cultura diversificada.</p>
-        </a>
-      </div>
-      <a href="destinos.html" class="botao-principal">
-        Ver todos os destinos
-      </a>
-      <br><br>
-    </section>
-
-    <!-- Section dicas -->
-
-    <section class="dicas-home">
-      <h2>Dicas para viagem perfeita</h2>
-
-      <div class="cards-dicas">
-        <!-- Primeiro card -->
-        <article class="card-dica">
-          <div class="icone-dica">
-            <img src="assets/img/home/icone-mala.webp" alt="Icone de mala de viagem" />
-          </div>
-
-          <div class="dica-conteudo">
-            <h3>Planeje com antecedência</h3>
-
-            <p>
-              Pesquise sobre o destino, clima, atrações e melhores épocas para
-              viajar.
-            </p>
-          </div>
-        </article>
-
-        <!-- Segundo card -->
-        <article class="card-dica">
-          <div class="icone-dica">
-            <img src="assets/img/home/icone-camera.webp" alt="Icone de camera fotográfica" />
-          </div>
-
-          <div class="dica-conteudo">
-            <h3>Respeite a cultura local</h3>
-
-            <p>
-              Cada região tem suas histórias e tradições. Valorize e respeite
-              as diferenças culturais.
-            </p>
-          </div>
-        </article>
-
-        <!-- Terceiro card -->
-        <article class="card-dica">
-          <div class="icone-dica">
-            <img src="assets/img/home/icone-animal.webp" alt="Icone de animal selvagem" />
-          </div>
-
-          <div class="dica-conteudo">
-            <h3>Viaje com consciência</h3>
-
-            <p>
-              Preserve a natureza, evite disperdícios e apoie o turismo
-              sustentável.
-            </p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <!-- Logo footer -->
-
-    <div class="footer-logo">
-      <img src="assets/img/home/footer-logo.webp" alt="Ilustração do Brasil com a bandeira brasileira" />
-
-      <p>
-        Seu guia completo pra descobrir o melhor do turismo nacional. Explore,
-        inspire-se e viva o Brasil em cada trilha!
-      </p>
-    </div>
-
-    <!-- Navegação footer -->
-
-    <div class="footer-nav">
-      <h3>Navegação</h3>
-
-      <a href="index.html">Início</a>
-      <a href="destinos.html">Destinos</a>
-      <a href="dicas.html">Dicas</a>
-      <a href="contato.html">Contato</a>
-    </div>
-
-    <!-- Redes sociais footer -->
-    <div class="footer-redes">
-      <h3>Redes sociais</h3>
-
-      <!-- Icones -->
-      <div class="rede-links">
-        <!-- Instagram -->
-        <a href="#" target="_blank" aria-label="Instagram"><img src="assets/img/home/icone-instagram.svg"
-            alt="Instagram" /></a>
-        <!-- Facebook -->
-        <a href="#" target="_blank" arial-label="Facebook"><img src="assets/img/home/icone-facebook.svg"
-            alt="Facebook" /></a>
-        <!-- Youtube -->
-        <a href="#" target="_blank" aria-label="Youtube"><img src="assets/img/home/icone-youtube.svg"
-            alt="Youtube" /></a>
-      </div>
-    </div>
-
-    <!-- Contato footer -->
-    <div class="footer-contato">
-      <h3>Contato</h3>
-
-      <p>Email: contato@TTBrasil.com</p>
-      <p>Projeto acadêmico — UFES</p>
-    </div>
-
-    <!-- Copy footer -->
-    <div class="footer-copy">
-      <p>
-        &copy; 2026 Trilha Turismo Brasil. Projeto acadêmico desenvolvido para
-        a disciplina de Fundamentos de Programação Web.
-      </p>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

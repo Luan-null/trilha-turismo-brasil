@@ -244,11 +244,18 @@ header img {
   color: var(--cor-texto);
   overflow: hidden;
 
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 
   flex: 1;
   display: flex;
   flex-direction: column;
+
+  transition: transform 0.4s ease-in-out;
+}
+
+.card-destino:hover {
+  box-shadow: 0 15px 30px rgba(2, 87, 13, 0.322);
+  transform: translateY(-2px) scale(1.08);
 }
 
 .card-destino img {
@@ -326,7 +333,7 @@ header img {
   background-color: var(--verde-brasil);
   color: var(--branco-neve);
   padding: 60px 5% 24px;
-  
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -339,7 +346,7 @@ header img {
 }
 
 .footer-logo {
-  flex: 2; 
+  flex: 2;
 }
 
 .footer-copy {
@@ -352,7 +359,7 @@ header img {
 }
 
 .footer h3 {
-  font-family: var(--fonte-titulo); 
+  font-family: var(--fonte-titulo);
   font-size: 1.5rem;
   margin-bottom: 24px;
 }
