@@ -249,6 +249,13 @@ header img {
   flex: 1;
   display: flex;
   flex-direction: column;
+
+  transition: transform 0.4s ease-in-out;
+}
+
+.card-destino:hover {
+  box-shadow: 0 15px 30px rgba(2, 87, 13, 0.322);
+  transform: translateY(-2px) scale(1.08);
 }
 
 .card-destino img {
@@ -329,8 +336,8 @@ header img {
   /* Abre espaço em cima para o desenho caber */
   background-color: var(--verde-brasil);
   color: var(--branco-neve);
-  padding: 20px 5% 24px;
-
+  padding: 60px 5% 24px;
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
