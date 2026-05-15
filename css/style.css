@@ -171,7 +171,7 @@ header img {
   color: var(--branco-neve);
   text-decoration: none;
   font-weight: 500;
-  padding: 12px 32px;
+  padding: 12px 22px;
   border-radius: 50px;
   width: fit-content;
   transition:
@@ -180,6 +180,14 @@ header img {
   box-shadow:
     0 0 8px 2px rgba(0, 0, 0, 0.438),
     0 0 28px 6px rgba(0, 0, 0, 0.384);
+}
+
+.botao-principal 
+
+.botao-principal img {
+  display: inline;
+  height: 20px;
+  width: auto;
 }
 
 .botao-principal:hover {
