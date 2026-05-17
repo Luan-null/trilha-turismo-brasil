@@ -167,11 +167,13 @@ header img {
 }
 
 .botao-principal {
+  display: flex;
+  gap: 5px;
   background-color: var(--verde-brasil);
   color: var(--branco-neve);
   text-decoration: none;
   font-weight: 500;
-  padding: 12px 22px;
+  padding: 12px 32px;
   border-radius: 50px;
   width: fit-content;
   transition:
@@ -182,12 +184,9 @@ header img {
     0 0 28px 6px rgba(0, 0, 0, 0.384);
 }
 
-.botao-principal 
-
-.botao-principal img {
-  display: inline;
-  height: 20px;
-  width: auto;
+.botao-principal a {
+  text-decoration: none;
+  color: var(--branco-neve);
 }
 
 .botao-principal:hover {
