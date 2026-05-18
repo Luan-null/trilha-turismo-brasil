@@ -468,3 +468,81 @@ hr.linha-moderna {
 	font-size: 0.95rem;
 	margin-bottom: 8px;
 }
+
+/* ======= REGIÕES ======= */
+
+.regioes-destaque {
+	padding: 20px 5%;
+	text-align: center;
+	background-color: var(--branco-neve);
+}
+
+.regioes-destaque h2 {
+	color: var(--verde-brasil);
+	font-size: 2.5rem;
+	margin-top: 0;
+}
+
+.grid-regioes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 32px;
+	margin: 0 auto;
+}
+
+.cards-regioes {
+  flex: 1;
+  min-width: 320px;
+  max-width: 350px;
+}
+
+.card-regiao {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--texto);
+  transition: transform 0.3s ease; 
+}
+
+.card-regiao:hover {
+  transform: translateY(-8px);
+}
+
+.card-regiao > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-regiao-conteudo {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  flex: 1;
+}
+
+.textos {
+  text-align: left;
+  max-width: 65%;
+}
+
+.textos h3 {
+  color: var(--verde-brasil);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.textos p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.ilustracao-regiao {
+  width: 150px;
+  height: auto;
+  align-self: flex-end;
+}
