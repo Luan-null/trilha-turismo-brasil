@@ -484,17 +484,20 @@ hr.linha-moderna {
 }
 
 .grid-regioes {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 32px;
-	margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  gap: 32px;
+  margin: 0 auto;
 }
 
 .cards-regioes {
-  flex: 1;
-  min-width: 320px;
-  max-width: 350px;
+  grid-column: span 2;
+}
+
+.grid-regioes .cards-regioes:nth-child(4),
+.grid-regioes .cards-regioes:nth-child(5) {
+  grid-column: span 3;
 }
 
 .card-regiao {
@@ -545,4 +548,28 @@ hr.linha-moderna {
   width: 150px;
   height: auto;
   align-self: flex-end;
+}
+
+#card-sul {
+	padding: 24px 24px 7px 24px;
+}
+
+/* --- DICAS --- */
+
+.dicas-essenciais {
+  background-color: var(--branco-neve);
+  padding: 20px 5%;
+  text-align: center;
+}
+
+.dicas-essenciais h2 {
+  color: var(--verde-brasil);
+  font-size: 2.5rem;
+}
+
+.cards-dicas-essenciais {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 0 auto;
 }
