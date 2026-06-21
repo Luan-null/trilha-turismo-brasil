@@ -63,6 +63,7 @@ header {
 
 	position: absolute;
 	width: 100%;
+	z-index: 10;
 	box-sizing: border-box;
 }
 
@@ -131,7 +132,7 @@ header nav a:hover {
 		url("../assets/img/home/hero-destino.webp");
 	background-size: cover;
 	background-position: center;
-	height: 80vh;
+	height: 100vh;
 
 	display: flex;
 	flex-direction: column;
@@ -143,10 +144,10 @@ header nav a:hover {
 .dica-hero {
 	background-image:
 		linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-		url("../assets/img/home/hero-dica.webp");
+		url("../assets/img/dicas/papagaio-dicas.webp");
 	background-size: cover;
-	background-position: top;
-	height: 80vh;
+	background-position: center;
+	height: 100vh;
 
 	display: flex;
 	flex-direction: column;
@@ -169,21 +170,21 @@ header nav a:hover {
 }
 
 .botao-principal {
-  display: flex;
-  gap: 5px;
-  background-color: var(--verde-brasil);
-  color: var(--branco-neve);
-  text-decoration: none;
-  font-weight: 500;
-  padding: 12px 32px;
-  border-radius: 50px;
-  width: fit-content;
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease-in-out;
-  box-shadow:
-    0 0 8px 2px rgba(0, 0, 0, 0.438),
-    0 0 28px 6px rgba(0, 0, 0, 0.384);
+	display: flex;
+	gap: 5px;
+	background-color: var(--verde-brasil);
+	color: var(--branco-neve);
+	text-decoration: none;
+	font-weight: 500;
+	padding: 12px 32px;
+	border-radius: 50px;
+	width: fit-content;
+	transition:
+		opacity 0.3s ease,
+		transform 0.3s ease-in-out;
+	box-shadow:
+		0 0 8px 2px rgba(0, 0, 0, 0.438),
+		0 0 28px 6px rgba(0, 0, 0, 0.384);
 }
 
 .botao-principal a {
@@ -484,70 +485,70 @@ hr.linha-moderna {
 }
 
 .grid-regioes {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  justify-content: center;
-  gap: 32px;
-  margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	justify-content: center;
+	gap: 32px;
+	margin: 0 auto;
 }
 
 .cards-regioes {
-  grid-column: span 2;
+	grid-column: span 2;
 }
 
 .grid-regioes .cards-regioes:nth-child(4),
 .grid-regioes .cards-regioes:nth-child(5) {
-  grid-column: span 3;
+	grid-column: span 3;
 }
 
 .card-regiao {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  border-radius: 16px;
-  overflow: hidden;
-  text-decoration: none;
-  color: var(--texto);
-  transition: transform 0.3s ease; 
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+	border-radius: 16px;
+	overflow: hidden;
+	text-decoration: none;
+	color: var(--texto);
+	transition: transform 0.3s ease;
 }
 
 .card-regiao:hover {
-  transform: translateY(-8px);
+	transform: translateY(-8px);
 }
 
-.card-regiao > img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.card-regiao>img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
 }
 
 .card-regiao-conteudo {
-  display: flex;
-  justify-content: space-between;
-  padding: 24px;
-  flex: 1;
+	display: flex;
+	justify-content: space-between;
+	padding: 24px;
+	flex: 1;
 }
 
 .textos {
-  text-align: left;
-  max-width: 65%;
+	text-align: left;
+	max-width: 65%;
 }
 
 .textos h3 {
-  color: var(--verde-brasil);
-  font-size: 1.5rem;
-  margin: 0;
+	color: var(--verde-brasil);
+	font-size: 1.5rem;
+	margin: 0;
 }
 
 .textos p {
-  font-size: 0.95rem;
-  line-height: 1.4;
+	font-size: 0.95rem;
+	line-height: 1.4;
 }
 
 .ilustracao-regiao {
-  width: 150px;
-  height: auto;
-  align-self: flex-end;
+	width: 150px;
+	height: auto;
+	align-self: flex-end;
 }
 
 #card-sul {
@@ -557,19 +558,19 @@ hr.linha-moderna {
 /* --- DICAS --- */
 
 .dicas-essenciais {
-  background-color: var(--branco-neve);
-  padding: 20px 5%;
-  text-align: center;
+	background-color: var(--branco-neve);
+	padding: 20px 5%;
+	text-align: center;
 }
 
 .dicas-essenciais h2 {
-  color: var(--verde-brasil);
-  font-size: 2.5rem;
+	color: var(--verde-brasil);
+	font-size: 2.5rem;
 }
 
 .cards-dicas-essenciais {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	gap: 32px;
+	margin: 0 auto;
 }
