@@ -114,7 +114,7 @@ header nav a:hover {
 .hero {
 	background-image:
 		linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-		url("../assets/img/home/hero-dica.webp");
+		url("../assets/img/home/hero-index.webp");
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -141,10 +141,25 @@ header nav a:hover {
 	color: var(--branco-neve);
 }
 
+.brasil-hero {
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../assets/img/brasil/brasil-hero.webp");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 5%;
+	color: var(--branco-neve);
+}
+
 .dica-hero {
 	background-image:
 		linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-		url("../assets/img/dicas/papagaio-dicas.webp");
+		url("../assets/img/dicas/hero-dica.png");
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
