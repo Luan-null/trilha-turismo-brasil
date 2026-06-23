@@ -156,6 +156,82 @@ header nav a:hover {
 	color: var(--branco-neve);
 }
 
+.norte-hero {
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../assets/img/regioes/Norte.webp");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 5%;
+	color: var(--branco-neve);
+}
+
+.sudeste-hero {
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../assets/img/regioes/sudeste.webp");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 5%;
+	color: var(--branco-neve);
+}
+
+.nordeste-hero {
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../assets/img/regioes/nordeste.webp");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 5%;
+	color: var(--branco-neve);
+}
+
+.centro-oeste-hero {
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../assets/img/regioes/centro-oeste.webp");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 5%;
+	color: var(--branco-neve);
+}
+
+.sul-hero {
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../assets/img/regioes/sul.webp");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 5%;
+	color: var(--branco-neve);
+}
+
+
 .hero h1 {
 	font-size: 3.5rem;
 	line-height: 1.1;
