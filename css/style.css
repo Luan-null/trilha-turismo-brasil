@@ -109,6 +109,16 @@ header nav a:hover {
 		0 0 28px 6px rgba(0, 0, 0, 0.384);
 }
 
+.menu-hamburguer {
+    display: none; 
+    background: none;
+    border: none;
+    color: var(--verde-brasil);
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
 /* HERO */
 
 .hero {
@@ -369,12 +379,19 @@ hr.linha-moderna {
 	background-color: var(--verde-brasil);
 	color: var(--branco-neve);
 	padding: 0 5% 24px;
+}
+
+/* .footer {
+	position: relative;
+	background-color: var(--verde-brasil);
+	color: var(--branco-neve);
+	padding: 0 5% 24px;
 
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 40px;
-}
+} */
 
 .footer::before {
 	content: "";
@@ -391,20 +408,19 @@ hr.linha-moderna {
 	z-index: 10;
 }
 
-.footer>div {
-	flex: 1;
-	min-width: 200px;
-}
-
-.footer-logo {
-	flex: 2;
+.footer-colunas {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	justify-content: space-around;
 }
 
 .footer-copy {
-	width: 10%;
 	text-align: center;
 	border-top: 1px solid rgba(255, 255, 255, 0.2);
 	font-size: 0.9rem;
+	margin-top: 40px;
+	padding-top: 24px;
 }
 
 .footer h3 {
@@ -421,7 +437,6 @@ hr.linha-moderna {
 
 .footer-nav {
 	margin-left: 20px;
-	margin-right: -60px;
 }
 
 .footer-nav a {
@@ -573,4 +588,25 @@ hr.linha-moderna {
 	justify-content: center;
 	gap: 32px;
 	margin: 0 auto;
+}
+
+/* ===============================
+   RESPONSIVIDADE (CELULARES)
+=============================== */
+
+@media (max-width: 768px) {
+
+	header nav {
+		display: none;
+	}
+
+	.menu-hamburguer {
+		display: block;
+	}
+
+	.cards-dicas {
+		display: flex;
+		flex-direction: column;
+	}
+
 }
