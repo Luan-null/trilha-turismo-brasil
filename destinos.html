@@ -18,14 +18,16 @@
         <img src="assets/img/home/footer-logo.webp" alt="Logo da Trilha Turismo Brasil" class="logo" />
       </a>
     </div>
-    <menu>
-      <nav>
-        <a href="index.html">Início</a>
-        <a href="destinos.html" class="ativo">Destinos</a>
-        <a href="dicas.html">Dicas</a>
-        <a href="brasil.html">Brasil</a>
-      </nav>
-    </menu>
+
+    <button class="menu-hamburguer" aria-label="Abrir menu"></button>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="destinos.html" class="ativo">Destinos</a>
+      <a href="dicas.html">Dicas</a>
+      <a href="brasil.html">Brasil</a>
+    </nav>
+
   </header>
   <main>
     <!-- ========================================== -->
@@ -206,62 +208,58 @@
   <!-- ========================================== -->
   <!-- RODAPÉ (FOOTER) -->
   <!-- ========================================== -->
+
   <footer class="footer">
 
-    <!-- Logo footer -->
-    <div class="footer-logo">
-      <img src="assets/img/home/footer-logo.webp" alt="Ilustração do Brasil com a bandeira brasileira" />
+    <div class="footer-colunas">
 
-      <p>
-        Seu guia completo pra descobrir o melhor do turismo nacional. Explore,
-        inspire-se e viva o Brasil em cada trilha!
-      </p>
-    </div>
+      <div class="footer-logo">
+        <img src="assets/img/home/footer-logo.webp" alt="Ilustração do Brasil com a bandeira brasileira" />
+        <p>
+          Seu guia completo pra descobrir o melhor do turismo nacional. Explore,
+          inspire-se e viva o Brasil em cada trilha!
+        </p>
+      </div>
 
-    <!-- Navegação footer -->
+        <div class="footer-nav">
+          <h3>Navegação</h3>
+          <a href="index.html">Início</a>
+          <a href="destinos.html">Destinos</a>
+          <a href="dicas.html">Dicas</a>
+          <a href="contato.html">Contato</a>
+        </div>
+    
 
-    <div class="footer-nav">
-      <h3>Navegação</h3>
-
-      <a href="index.html">Início</a>
-      <a href="destinos.html">Destinos</a>
-      <a href="dicas.html">Dicas</a>
-      <a href="brasil.html">brasil</a>
-    </div>
-
-    <!-- Redes sociais footer -->
     <div class="footer-redes">
-      <h3>Redes sociais</h3>
-
-      <!-- Icones -->
+      <h3>Redes antisociais</h3>
       <div class="rede-links">
-        <!-- Instagram -->
         <a href="#" target="_blank" aria-label="Instagram"><img src="assets/img/home/icone-instagram.svg"
             alt="Instagram" /></a>
-        <!-- Facebook -->
         <a href="#" target="_blank" arial-label="Facebook"><img src="assets/img/home/icone-facebook.svg"
             alt="Facebook" /></a>
-        <!-- Youtube -->
         <a href="#" target="_blank" aria-label="Youtube"><img src="assets/img/home/icone-youtube.svg"
             alt="Youtube" /></a>
       </div>
     </div>
 
-    <!-- Contato footer -->
     <div class="footer-contato">
       <h3>Contato</h3>
-
       <p>Email: contato@TTBrasil.com</p>
-      <p>Projeto acadêmico — UFES</p>
     </div>
+  </div>
 
-    <!-- Copy footer -->
+    </div>
     <div class="footer-copy">
-      <p>
+      <p class="texto-desktop">
         &copy; 2026 Trilha Turismo Brasil. Projeto acadêmico desenvolvido para
         a disciplina de Fundamentos de Programação Web.
       </p>
+      <p class="texto-mobile">
+        &copy; 2026 Trilha Turismo Brasil. Todos os direitos reservados.
+      </p>
     </div>
+
+    <script src="js/script.js" defer></script>
   </footer>
 </body>
 
