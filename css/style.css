@@ -734,7 +734,6 @@ hr.linha-moderna {
 
 	header {
 		background-color: var(--branco-neve);
-		border-radius: 0 0 10px 10px;
 		align-items: center;
 	}
 
@@ -749,6 +748,7 @@ hr.linha-moderna {
 		position: absolute;
 		top: 37px;
 		left: 0;
+		gap: 0;
 		width: 100%;
 		background-color: var(--verde-brasil);
 
@@ -768,12 +768,12 @@ hr.linha-moderna {
 	header .menu-aberto {
 		max-height: 400px;
 		opacity: 1;
-		padding: 16px 0;
+		justify-content: space-around;
 	}
 
 	header nav a {
 		text-align: center;
-		padding: 16px 5%;
+		padding: 10px 0;
 		margin: 0;
 		display: block;
 		color: var(--branco-neve);
@@ -792,6 +792,15 @@ hr.linha-moderna {
 		border-radius: 0;
 		display: block;
 		background-color: #ffffff17;
+	}
+
+	header nav a:hover {
+		background-color: var(--verde-brasil);
+		color: var(--branco-neve);
+		padding: 8px 24px;
+		border-radius: 50px;
+		box-shadow: none;
+		transform: translateY(-2px);
 	}
 
 	.menu-hamburguer {
