@@ -27,24 +27,25 @@
       </nav>
     </menu>
   </header>
-  <main>
-    <!-- ========================================== -->
-    <!-- HERO DA PÁGINA -->
-    <!-- ========================================== -->
-    <section class="hero dica-hero">
-      <h1>Dicas para aproveitar melhor cada destino</h1>
 
-      <p>
-        Informações práticas, inspirações e orientações para você aproveitar o
-        que o Brasil tem de melhor.
-      </p>
+  <!-- ========================================== -->
+  <!-- HERO DA PÁGINA -->
+  <!-- ========================================== -->
+  <section class="hero dica-hero">
+    <h1>Dicas para aproveitar melhor cada destino</h1>
 
-      <div class="botao-principal">
-        <img src="assets/img/home/bussola.png" alt="Ícone de bússola" />
-        <a href="#dicas-essenciais">Explorar dicas</a>
-      </div>
-    </section>
+    <p>
+      Informações práticas, inspirações e orientações para você aproveitar o
+      que o Brasil tem de melhor.
+    </p>
 
+    <div class="botao-principal">
+      <img src="assets/img/home/bussola.png" alt="Ícone de bússola" />
+      <a href="#dicas-essenciais">Explorar dicas</a>
+    </div>
+  </section>
+
+  <main class="dicas-main">
     <!-- ========================================== -->
     <!-- SEÇÃO: DICAS ESSENCIAIS -->
     <!-- ========================================== -->
@@ -136,10 +137,11 @@
         </article>
       </div>
     </section>
+
     <!-- ========================================== -->
     <!-- SEÇÃO: ANTES DE VIAJAR -->
     <!-- ========================================== -->
-    <section id="Viajar" class="dicas-essenciais">
+    <section id="viajar" class="dicas-essenciais">
       <!--Título Icone-->
       <div class="dica-viagem-titulo">
         <img src="assets/img/dicas/icone-localizacao-dica-trim.webp" alt="Ícone de localização">
@@ -199,24 +201,24 @@
             </ul>
           </div>
         </article>
-      </div>
 
-      <!-- Quarto Card-->
-      <article class="dicas-viagem-card">
-        <!-- Card Título-->
-        <div class="dicas-viagem-titulo">
-          <img src="assets/img/dicas/icone-wifi-dica-trim.webp" alt="Ícone de wifi">
-          <h3>Conectividade e informação</h3>
-        </div>
-        <!-- Card texto-->
-        <div class="dicas-viagem-texto">
-          <ul>
-            <li>Confira cobertura de internet e chips locais</li>
-            <li>Baixe mapas offline e apps úteis para viajar</li>
-            <li>Acompanhe previsões do tempo e alertas da região</li>
-          </ul>
-        </div>
-      </article>
+        <!-- Quarto Card-->
+        <article class="dicas-viagem-card">
+          <!-- Card Título-->
+          <div class="dicas-viagem-titulo">
+            <img src="assets/img/dicas/icone-wifi-dica-trim.webp" alt="Ícone de wifi">
+            <h3>Conectividade e informação</h3>
+          </div>
+          <!-- Card texto-->
+          <div class="dicas-viagem-texto">
+            <ul>
+              <li>Confira cobertura de internet e chips locais</li>
+              <li>Baixe mapas offline e apps úteis para viajar</li>
+              <li>Acompanhe previsões do tempo e alertas da região</li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </section>
 
     <!-- ========================================== -->
@@ -225,57 +227,68 @@
     <section class="viagem-consciente">
       <h2>Viaje com mais consciência</h2>
 
-      <!-- Primeiro Card -->
-      <article class="viagem-consciente-card">
-        <!-- Card imagem -->
-        <div class="imagem-icon">
-          <img src="assets/img/dicas/Papagaio-dica07.webp" alt="Imagem de paisagem">
-          <img src="assets/img/dicas/planta-icone-dica-trim.webp" alt="Ícone de planta">
-        </div>
-        <!-- Card conteúdo -->
-        <div class="card-dica-conteudo">
-          <h3>Respeite a natureza</h3>
-          <p>Preserve trilhas, praias e áreas naturais. Não deixe lixo, não retire plantas ou pedras e siga as
-            orientações das unidades de conservação</p>
-        </div>
-      </article>
+      <div class="cards-consciencia">
+        <!-- Primeiro Card -->
+        <article class="viagem-consciente-card">
+          <!-- Card imagem -->
+          <div class="imagem-icon">
+            <img src="assets/img/dicas/Papagaio-dica07.webp" alt="Imagem de paisagem">
+            <img src="assets/img/dicas/planta-icone-dica-trim.webp" alt="Ícone de planta">
+          </div>
+          <!-- Card conteúdo -->
+          <div class="card-dica-conteudo">
+            <h3>Respeite a natureza</h3>
+            <p>Preserve trilhas, praias e áreas naturais. Não deixe lixo, não retire plantas ou pedras e siga as
+              orientações das unidades de conservação</p>
+          </div>
+        </article>
 
-      <!-- Segundo Card -->
-      <article class="viagem-consciente-card">
-        <!-- Card imagem -->
-        <div class="imagem-icon">
-          <img src="assets/img/dicas/culturas-dica06.png" alt="Imagem de cultura">
-          <img src="assets/img/dicas/grupo-icone-dica-trim.webp" alt="Ícone de comunidade">
-        </div>
-        <!-- Card conteúdo -->
-        <div class="card-dica-conteudo">
-          <h3>Apoie o turismo local</h3>
-          <p>Valorize guias, artesãos, produtores e pequenos negócios. Seu consumo fortalece a economia local e mantém
-            tradições vivas.</p>
-        </div>
-      </article>
+        <!-- Segundo Card -->
+        <article class="viagem-consciente-card">
+          <!-- Card imagem -->
+          <div class="imagem-icon">
+            <img src="assets/img/dicas/culturas-dica06.png" alt="Imagem de cultura">
+            <img src="assets/img/dicas/grupo-icone-dica-trim.webp" alt="Ícone de comunidade">
+          </div>
+          <!-- Card conteúdo -->
+          <div class="card-dica-conteudo">
+            <h3>Apoie o turismo local</h3>
+            <p>Valorize guias, artesãos, produtores e pequenos negócios. Seu consumo fortalece a economia local e mantém
+              tradições vivas.</p>
+          </div>
+        </article>
 
-      <!-- Terceiro Card -->
-      <article class="viagem-consciente-card">
-        <!-- Card imagem -->
-        <div class="imagem-icon">
-          <img src="assets/img/dicas/recicle-dica05.png" alt="Imagem de reciclagem">
-          <img src="assets/img/dicas/reciclagem-icone-dica-trim.webp" alt="Ícone de reciclagem">
-        </div>
-        <!-- Card conteúdo -->
-        <div class="card-dica-conteudo">
-          <h3>Consuma de forma responsável</h3>
-          <p>Reduza o uso de descartáveis, economize água e energia e dê preferência a empresas de práticas sustentáveis
-          </p>
-        </div>
-      </article>
+        <!-- Terceiro Card -->
+        <article class="viagem-consciente-card">
+          <!-- Card imagem -->
+          <div class="imagem-icon">
+            <img src="assets/img/dicas/recicle-dica05.png" alt="Imagem de reciclagem">
+            <img src="assets/img/dicas/reciclagem-icone-dica-trim.webp" alt="Ícone de reciclagem">
+          </div>
+          <!-- Card conteúdo -->
+          <div class="card-dica-conteudo">
+            <h3>Consuma de forma responsável</h3>
+            <p>Reduza o uso de descartáveis, economize água e energia e dê preferência a empresas de práticas
+              sustentáveis
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-      <!-- ========================================== -->
-      <!-- SEÇÃO: CHECKLIST RÁPIDO -->
-      <!-- ========================================== -->
-      <section class="checklist">
-        <img src="assets/img/dicas/icone-prancheta-dica-trim.webp" alt="Ícone de prancheta">
-        <ul>
+    <!-- ========================================== -->
+    <!-- SEÇÃO: CHECKLIST RÁPIDO -->
+    <!-- ========================================== -->
+    <section class="checklist">
+        <div class="checklist-cabecalho">
+          <img src="assets/img/dicas/icone-prancheta-dica-trim.webp" alt="Ícone de prancheta">
+          <div class="checklist-textos">
+            <h3>Checklist rápido</h3>
+            <p>Antes de sair, confira o essencial:</p>
+          </div>
+        </div>
+        
+        <ul class="checklist-itens">
           <li>Documentos em dia</li>
           <li>Hospedagem confirmada</li>
           <li>Seguro viagem contratado</li>
@@ -283,69 +296,63 @@
           <li>Mapas e apps baixados</li>
         </ul>
       </section>
-
-    </section>
   </main>
+
   <!-- ========================================== -->
   <!-- RODAPÉ (FOOTER) -->
   <!-- ========================================== -->
+
   <footer class="footer">
-    <!-- Logo footer -->
 
-    <div class="footer-logo">
-      <img src="assets/img/home/footer-logo.webp" alt="Ilustração do Brasil com a bandeira brasileira" />
+    <div class="footer-colunas">
 
-      <p>
-        Seu guia completo pra descobrir o melhor do turismo nacional. Explore,
-        inspire-se e viva o Brasil em cada trilha!
-      </p>
-    </div>
+      <div class="footer-logo">
+        <img src="assets/img/home/footer-logo.webp" alt="Ilustração do Brasil com a bandeira brasileira" />
+        <p>
+          Seu guia completo pra descobrir o melhor do turismo nacional. Explore,
+          inspire-se e viva o Brasil em cada trilha!
+        </p>
+      </div>
 
-    <!-- Navegação footer -->
+      <div class="footer-nav">
+        <h3>Navegação</h3>
+        <a href="index.html">Início</a>
+        <a href="destinos.html">Destinos</a>
+        <a href="dicas.html">Dicas</a>
+        <a href="contato.html">Contato</a>
+      </div>
 
-    <div class="footer-nav">
-      <h3>Navegação</h3>
 
-      <a href="index.html">Início</a>
-      <a href="destinos.html">Destinos</a>
-      <a href="dicas.html">Dicas</a>
-      <a href="brasil.html">brasil</a>
-    </div>
+      <div class="footer-redes">
+        <h3>Redes antisociais</h3>
+        <div class="rede-links">
+          <a href="#" target="_blank" aria-label="Instagram"><img src="assets/img/home/icone-instagram.svg"
+              alt="Instagram" /></a>
+          <a href="#" target="_blank" arial-label="Facebook"><img src="assets/img/home/icone-facebook.svg"
+              alt="Facebook" /></a>
+          <a href="#" target="_blank" aria-label="Youtube"><img src="assets/img/home/icone-youtube.svg"
+              alt="Youtube" /></a>
+        </div>
+      </div>
 
-    <!-- Redes sociais footer -->
-    <div class="footer-redes">
-      <h3>Redes sociais</h3>
-
-      <!-- Icones -->
-      <div class="rede-links">
-        <!-- Instagram -->
-        <a href="#" target="_blank" aria-label="Instagram"><img src="assets/img/home/icone-instagram.svg"
-            alt="Ícone do Instagram" /></a>
-        <!-- Facebook -->
-        <a href="#" target="_blank" aria-label="Facebook"><img src="assets/img/home/icone-facebook.svg"
-            alt="Ícone do Facebook" /></a>
-        <!-- Youtube -->
-        <a href="#" target="_blank" aria-label="Youtube"><img src="assets/img/home/icone-youtube.svg"
-            alt="Ícone do YouTube" /></a>
+      <div class="footer-contato">
+        <h3>Contato</h3>
+        <p>Email: contato@TTBrasil.com</p>
       </div>
     </div>
 
-    <!-- Contato footer -->
-    <div class="footer-contato">
-      <h3>Contato</h3>
-
-      <p>Email: contato@TTBrasil.com</p>
-      <p>Projeto acadêmico — UFES</p>
     </div>
-
-    <!-- Copy footer -->
     <div class="footer-copy">
-      <p>
+      <p class="texto-desktop">
         &copy; 2026 Trilha Turismo Brasil. Projeto acadêmico desenvolvido para
         a disciplina de Fundamentos de Programação Web.
       </p>
+      <p class="texto-mobile">
+        &copy; 2026 Trilha Turismo Brasil. Todos os direitos reservados.
+      </p>
     </div>
   </footer>
+  <script src="js/script.js" defer></script>
 </body>
 
 </html>
