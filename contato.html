@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contato - Trilha Turismo Brasil</title>
+</head>
+
+<body>
+    <!-- ========================================== -->
+    <!-- CABEÇALHO (HEADER) -->
+    <!-- ========================================== -->
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="assets/img/logo/logo-ttb.webp" alt="Logo da Trilha Turismo Brasil" class="logo" />
+            </a>
+        </div>
+
+        <button class="menu-hamburguer" aria-label="Abrir menu">
+            &#9776;
+        </button>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="destinos.html">Destinos</a>
+            <a href="dicas.html">Dicas</a>
+            <a href="brasil.html">Brasil</a>
+            <a href="contato.html" class="ativo">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ========================================== -->
+        <!-- HERO DA PÁGINA -->
+        <!-- ========================================== -->
+        <section class="hero contato-hero">
+            <h1>Contato</h1>
+            <p>
+                Entre em contato através do nosso formulário.
+            </p>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- CARD NOTAS -->
+        <!-- ========================================== -->
+        <section class="TTB">
+            <article class="cards">
+                <div class="icones">
+                    <img src="assets/img/contato/icone-contato01.webp" alt="icone-contato01">
+                </div>
+                <div class="info-titulo">Atendimento rápido</div>
+                <div class="info-descricao">Respostas rápidas e atenciosas.</div>
+            </article>
+            <article class="cards">
+                <div class="icones">
+                    <img src="assets/img/contato/icone-contato02.webp" alt="icone-contato02">
+                </div>
+                <div class="info-titulo">Dicas exclusivas</div>
+                <div class="info-descricao">Informações de quem ama o Brasil</div>
+            </article>
+            <article class="cards">
+                <div class="icones">
+                    <img src="assets/img/contato/icone-contato03.webp" alt="icone-contato03">
+                </div>
+                <div class="info-titulo">Confiança e Segurança</div>
+                <div class="info-descricao">Crie seu roteiro com tranquilidade, com informações precisas</div>
+            </article>
+            <article class="cards">
+                <div class="icones">
+                    <img src="assets/img/contato/icone-contato04.webp" alt="icone-contato04">
+                </div>
+                <div class="info-titulo">Paixão por viagens</div>
+                <div class="info-descricao">Inspirar você a viver o melhor do nosso país</div>
+            </article>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SEÇÕES FORMULARIO E CONTATO -->
+        <!-- ========================================== -->
+
+        <section>
+            <section>
+                <div class="contato-inicio">
+                    <h2>Fale Conosco</h2>
+                    <p>Preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível</p>
+                </div>
+                <div class="Envio-Nota">
+                    <form action="GET">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required
+                            pattern="^[A-Za-zÀ-ÿ\s]{3,}$"
+                            title="O nome deve conter apenas letras e ter no mínimo 3 caracteres.">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Como podemos te ajudar?"
+                            required></textarea>
+                        <button class="botao-formulario"><img src="assets/img/contato/icone-botao.webp"
+                                alt="icone-botao"> Enviar mensagem</button>
+                    </form>
+                    <div class="protegido">
+                        <img src="assets/img/contato/icone-cadeado.webp" alt="icone-cadeado">
+                        <p>Seus dados estão seguros conosco. Não compartilhamos suas informações com terceiros.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="contato-final">
+                    <h2>Contato Rápido</h2>
+                    <p>Se preferir, entre em contato através dos canais abaixo:</p>
+                </div>
+                <article class="contatos">
+                    <div class="contatos-card">
+                        <img src="assets/img/contato/icones-whatsapp.webp" alt="icone-whatsapp">
+                        <h3>WhatsApp</h3>
+                        <p>+55 (12) 98127-0574</p>
+                        <p>Seg a Sex, das 9h ás 18h</p>
+                    </div>
+                    <div class="contatos-card">
+                        <img src="assets/img/contato/icones-email.webp" alt="icone-email">
+                        <h3>E-mail</h3>
+                        <p>contato@trilhaturismobrasil.com.br</p>
+                        <p>Responderemos em breve.</p>
+                    </div>
+                    <div class="contatos-card">
+                        <img src="assets/img/contato/icones-telefone.webp" alt="icone-telefone">
+                        <h3>Telefone</h3>
+                        <p>+55 (13) 99602-9076</p>
+                        <p>Seg a Sex, das 9h ás 18h</p>
+                    </div>
+                    <div class="contatos-card">
+                        <img src="assets/img/contato/icones-endereco.webp" alt="icone-endereco">
+                        <h3>Endereço</h3>
+                        <p>Alto Universitário, S/n</p>
+                        <p>Alegre, Espírito-Santo - ES</p>
+                        <p>CEP: 29500-000</p>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.751680287178!2d-41.5381994!3d-20.7615961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbbebc4186d2fcb%3A0x391d53ad953b9078!2sUniversidade+Federal+do+Esp%C3%ADrito+Santo+-+Campus+de+Alegre!5e0!3m2!1spt-BR!2sbr!4v1719778400000!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </article>
+            </section>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- PERGUNTAS FRQUENTES -->
+        <!-- ========================================== -->
+        <section class="perguntas-frequentes">
+            <div class="perguntas-titulo">
+                <h2>Perguntas frequentes</h2>
+                <p>Encontre respostas para as dúvidas mais comuns</p>
+            </div>
+            <div class="perguntas">
+                <details>
+                    <summary>Como posso planejar minha viagem com o Trilha Turismo Brasil?</summary>
+                    <p>O planejamento é bem simples! Você pode explorar nosso site, navegar pelos destinos
+                        disponíveis, ler as dicas e montar seu roteiro personalizado. Se preferir, nossa equipe pode te
+                        ajudar em cada etapa do processo.</p>
+                </details>
+                <details>
+                    <summary>Vocês montam roteiros personalizados?</summary>
+                    <p>No momento não montamos roteiros personalizados, mas sugerimos que você explore nosso site e
+                        encontre tudo o que precisa para montar sua viagem perfeita.</p>
+                </details>
+                <details>
+                    <summary>Os destinos são atualizados com frequência?</summary>
+                    <p>Sim! Nossa equipe está sempre em busca das melhores experiências para oferecer a você.</p>
+                </details>
+                <details>
+                    <summary>Como posso receber dicas e novidades?</summary>
+                    <p>Você pode se inscrever em nossa newsletter e receber dicas e novidades em primeira mão.</p>
+                </details>
+            </div>
+            <article class="duvidas">
+                <div class="duvida-titulo">
+                    <img src="assets/img/contato/icone-headeset.png" alt="icone-headeset">
+                    <h2>Ainda com dúvidas?</h2>
+                </div>
+                <div class="duvida-texto">
+                    <p>
+                        Nossa equipe está disponível para ajudar você com o que precisar. Entre em contato através dos
+                        nossos canais de atendimento.
+                    </p>
+                </div>
+            </article>
+            <div class="perguntas-imagens">
+                <img src="assets/img/contato/imagem-mulher.webp" alt="imagem-mulher">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================== -->
+    <!-- RODAPÉ (FOOTER) -->
+    <!-- ========================================== -->
+    <footer class="footer">
+        <div class="footer-colunas">
+            <div class="footer-logo">
+                <img src="assets/img/home/footer-logo.webp" alt="Ilustração do Brasil com a bandeira brasileira" />
+                <p>
+                    Seu guia completo pra descobrir o melhor do turismo nacional. Explore,
+                    inspire-se e viva o Brasil em cada trilha!
+                </p>
+            </div>
+
+            <div class="footer-nav">
+                <h3>Navegação</h3>
+                <a href="index.html">Início</a>
+                <a href="destinos.html">Destinos</a>
+                <a href="dicas.html">Dicas</a>
+                <a href="contato.html">Contato</a>
+            </div>
+
+            <div class="footer-redes">
+                <h3>Redes antisociais</h3>
+                <div class="rede-links">
+                    <a href="#" target="_blank" aria-label="Instagram"><img src="assets/img/home/icone-instagram.svg"
+                            alt="Instagram" /></a>
+                    <a href="#" target="_blank" aria-label="Facebook"><img src="assets/img/home/icone-facebook.svg"
+                            alt="Facebook" /></a>
+                    <a href="#" target="_blank" aria-label="Youtube"><img src="assets/img/home/icone-youtube.svg"
+                            alt="Youtube" /></a>
+                </div>
+            </div>
+
+            <div class="footer-contato">
+                <h3>Contato</h3>
+                <p>Email: contato@TTBrasil.com</p>
+            </div>
+        </div>
+
+        <div class="footer-copy">
+            <p>
+                &copy; 2026 Trilha Turismo Brasil. Projeto acadêmico desenvolvido para
+                a disciplina de Fundamentos de Programação Web.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
