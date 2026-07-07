@@ -15,7 +15,7 @@
     <header>
         <div>
             <a href="index.html">
-                <img src="assets/img/logo/logo-ttb.webp" alt="Logo da Trilha Turismo Brasil" class="logo" />
+                <img src="assets/img/home/footer-logo.webp" alt="Logo da Trilha Turismo Brasil" class="logo" />
             </a>
         </div>
 
@@ -39,7 +39,7 @@
         <section class="hero contato-hero">
             <h1>Contato</h1>
             <p>
-                Entre em contato através do nosso formulário.
+                Estamos aqui para ajudar você a planejar sua próxima aventura pelo Brasil. Entre em contato conosco!
             </p>
         </section>
 
@@ -51,29 +51,37 @@
                 <div class="icones">
                     <img src="assets/img/contato/icone-contato01.webp" alt="icone-contato01">
                 </div>
-                <div class="info-titulo">Atendimento rápido</div>
-                <div class="info-descricao">Respostas rápidas e atenciosas.</div>
+                <div>
+                    <div class="info-titulo">Atendimento rápido</div>
+                    <div class="info-descricao">Respostas rápidas e atenciosas.</div>
+                </div>
             </article>
             <article class="cards">
                 <div class="icones">
                     <img src="assets/img/contato/icone-contato02.webp" alt="icone-contato02">
                 </div>
-                <div class="info-titulo">Dicas exclusivas</div>
-                <div class="info-descricao">Informações de quem ama o Brasil</div>
+                <div>
+                    <div class="info-titulo">Dicas exclusivas</div>
+                    <div class="info-descricao">Informações de quem ama o Brasil.</div>
+                </div>
             </article>
             <article class="cards">
                 <div class="icones">
                     <img src="assets/img/contato/icone-contato03.webp" alt="icone-contato03">
                 </div>
-                <div class="info-titulo">Confiança e Segurança</div>
-                <div class="info-descricao">Crie seu roteiro com tranquilidade, com informações precisas</div>
+                <div>
+                    <div class="info-titulo">Confiança e Segurança</div>
+                    <div class="info-descricao">Crie seu roteiro com tranquilidade.</div>
+                </div>
             </article>
             <article class="cards">
                 <div class="icones">
                     <img src="assets/img/contato/icone-contato04.webp" alt="icone-contato04">
                 </div>
-                <div class="info-titulo">Paixão por viagens</div>
-                <div class="info-descricao">Inspirar você a viver o melhor do nosso país</div>
+                <div>
+                    <div class="info-titulo">Paixão por viagens</div>
+                    <div class="info-descricao">Inspirar você a viver o melhor do nosso país.</div>
+                </div>
             </article>
         </section>
 
@@ -81,25 +89,39 @@
         <!-- SEÇÕES FORMULARIO E CONTATO -->
         <!-- ========================================== -->
 
-        <section>
-            <section>
+        <section class="contato-grid">
+
+            <section class="contato-form">
                 <div class="contato-inicio">
-                    <h2>Fale Conosco</h2>
-                    <p>Preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível</p>
+                    <h2>Fale conosco</h2>
+                    <p>Preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível.</p>
                 </div>
                 <div class="Envio-Nota">
                     <form action="GET">
-                        <label for="nome">Nome Completo</label>
+                        <label for="nome">Nome completo *</label>
                         <input type="text" id="nome" name="nome" placeholder="Seu nome" required
                             pattern="^[A-Za-zÀ-ÿ\s]{3,}$"
                             title="O nome deve conter apenas letras e ter no mínimo 3 caracteres.">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
-                        <label for="mensagem">Mensagem</label>
+
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+                        <label for="assunto">Assunto *</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="" disabled selected>Selecione um assunto</option>
+                            <option value="duvida">Dúvida geral</option>
+                            <option value="orcamento">Orçamento de roteiro</option>
+                            <option value="parceria">Parcerias</option>
+                        </select>
+
+                        <label for="mensagem">Mensagem *</label>
                         <textarea id="mensagem" name="mensagem" placeholder="Como podemos te ajudar?"
                             required></textarea>
-                        <button class="botao-formulario"><img src="assets/img/contato/icone-botao.webp"
-                                alt="icone-botao"> Enviar mensagem</button>
+
+                        <button class="botao-formulario">
+                            <img src="assets/img/contato/icone-botao.webp" alt="icone-botao">
+                            Enviar mensagem
+                        </button>
                     </form>
                     <div class="protegido">
                         <img src="assets/img/contato/icone-cadeado.webp" alt="icone-cadeado">
@@ -107,9 +129,10 @@
                     </div>
                 </div>
             </section>
-            <section>
+
+            <section class="contato-info">
                 <div class="contato-final">
-                    <h2>Contato Rápido</h2>
+                    <h2>Outras formas de contato</h2>
                     <p>Se preferir, entre em contato através dos canais abaixo:</p>
                 </div>
                 <article class="contatos">
@@ -145,6 +168,7 @@
                     </iframe>
                 </article>
             </section>
+
         </section>
 
         <!-- ========================================== -->
