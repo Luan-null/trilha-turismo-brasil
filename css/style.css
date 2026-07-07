@@ -1172,7 +1172,6 @@ hr.linha-moderna {
 	margin: 0 5% 80px;
 	position: relative;
 	overflow: hidden;
-	max-width: 1400px;
 }
 
 .hino-nacional h2 {
@@ -1319,7 +1318,7 @@ hr.linha-moderna {
 	align-items: center;
 	gap: 16px;
 	flex: 1;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .cards img {
@@ -1354,6 +1353,7 @@ hr.linha-moderna {
 	border: 1px solid #ebebeb;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 	border-radius: 16px;
+	justify-content: center;
 }
 
 .contato-form .contato-info {
