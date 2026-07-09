@@ -47,3 +47,5 @@ if (cartoes.length > 0 && bolinhas.length > 0) {
     // 4. Mandamos o vigia olhar para cada um dos cartões
     cartoes.forEach(cartao => observador.observe(cartao));
 }
+
+

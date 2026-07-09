@@ -1172,7 +1172,6 @@ hr.linha-moderna {
 	margin: 0 5% 80px;
 	position: relative;
 	overflow: hidden;
-	max-width: 1400px;
 }
 
 .hino-nacional h2 {
@@ -1292,6 +1291,596 @@ hr.linha-moderna {
 	font-size: 0.9rem;
 	color: var(--cor-texto);
 	margin: 0;
+}
+
+/* ===============================
+   PÁGINA CONTATO
+=============================== */
+
+/* --- SEÇÃO CARDS NOTAS --- */
+.TTB {
+	background-color: var(--branco-neve);
+	border-radius: 50px;
+	padding: 32px 48px;
+	margin: -50px 5% 60px 5%;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	position: relative;
+	z-index: 10;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 24px;
+	border: 1px solid #dfdfdf;
+}
+
+.cards {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	flex: 1;
+	justify-content: space-around;
+}
+
+.cards img {
+	width: 48px;
+	filter: brightness(0) saturate(100%) invert(26%) sepia(27%) saturate(1132%) hue-rotate(87deg) brightness(94%) contrast(91%);
+}
+
+.icones {
+	width: 48px;
+}
+
+.info-titulo {
+	font-weight: 600;
+	color: var(--verde-brasil);
+	font-size: 0.95rem;
+	margin-bottom: 4px;
+}
+
+.info-descricao {
+	font-size: 0.85rem;
+	color: #666;
+	line-height: 1.4;
+}
+
+/* --- FORMS --- */
+
+.contato-grid {
+	display: flex;
+	gap: 60px;
+	padding: 20px;
+	margin: 0 3%;
+	border: 1px solid #ebebeb;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	border-radius: 16px;
+	justify-content: center;
+}
+
+.contato-form .contato-info {
+	flex: 1;
+}
+
+.contato-info {
+	padding-left: 50px;
+	border-left: 1px solid #ebebeb;
+}
+
+.contato-inicio h2,
+.contato-final h2 {
+	color: var(--verde-brasil);
+	font-size: 2rem;
+	margin-top: 0;
+	margin-bottom: 8px;
+	position: relative;
+}
+
+.contato-inicio h2::after,
+.contato-final h2::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 60px;
+	height: 4px;
+	background-color: var(--amarelo-solar);
+	border-radius: 2px;
+}
+
+.contato-inicio p,
+.contato-final p {
+	color: var(--cor-texto);
+	font-size: 0.95rem;
+	margin-bottom: 32px;
+}
+
+.Envio-Nota form {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.Envio-Nota label {
+	font-weight: 600;
+	color: #333;
+	font-size: 0.9rem;
+	margin-bottom: -8px;
+}
+
+.Envio-Nota input,
+.Envio-Nota select,
+.Envio-Nota textarea {
+	padding: 16px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	font-family: inherit;
+	font-size: 1rem;
+	background-color: #fafafa;
+	outline: none;
+	transition: border-color 0.3s;
+}
+
+.Envio-Nota input:focus,
+.Envio-Nota select:focus,
+.Envio-Nota textarea:focus {
+	border-color: var(--verde-brasil);
+}
+
+.Envio-Nota textarea {
+	resize: vertical;
+	min-height: 120px;
+}
+
+.botao-formulario {
+	background-color: var(--verde-brasil);
+	color: var(--branco-neve);
+	border: none;
+	padding: 16px;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	margin-top: 8px;
+	transition: opacity 0.3s;
+}
+
+.botao-formulario img {
+	width: 20px;
+}
+
+.botao-formulario:hover {
+	opacity: 0.9;
+}
+
+.protegido {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 24px;
+}
+
+.protegido p {
+	font-size: 0.8rem;
+	color: #777;
+	margin: 0;
+}
+
+.protegido img {
+	width: 15px;
+	filter: brightness(0) saturate(100%) invert(65%) sepia(0%) saturate(1%) hue-rotate(96deg) brightness(91%) contrast(89%);
+}
+
+.contatos {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(4, auto);
+	column-gap: 32px;
+	row-gap: 32px;
+	margin-top: 40px;
+}
+
+.contatos iframe {
+	grid-column: 2;
+	grid-row: 1 / span 4;
+	width: 100%;
+	height: 100%;
+	min-height: 400px;
+	border-radius: 16px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contatos-card {
+	display: grid;
+	grid-template-columns: 48px 1fr;
+	column-gap: 16px;
+	align-items: start;
+}
+
+.contatos-card img {
+	grid-column: 1;
+	grid-row: 2 / span 3;
+	width: 30px;
+	object-fit: contain;
+	filter: brightness(0) saturate(100%) invert(26%) sepia(27%) saturate(1132%) hue-rotate(87deg) brightness(94%) contrast(91%);
+}
+
+.contatos-card h3 {
+	grid-column: 2;
+	color: var(--verde-brasil);
+	font-size: 1.1rem;
+	margin: 0 0 4px 0;
+}
+
+.contatos-card p {
+	grid-column: 2;
+	color: #555;
+	font-size: 0.9rem;
+	margin: 0 0 4px 0;
+	line-height: 1.4;
+}
+
+/* ===============================
+   SEÇÃO: PERGUNTAS FREQUENTES
+=============================== */
+.perguntas-frequentes {
+	background-color: var(--branco-neve);
+	border-radius: 24px;
+	padding: 60px;
+	margin: 50px 3% 80px 3%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 60px;
+	row-gap: 32px;
+	align-items: start;
+}
+
+.perguntas-titulo,
+.perguntas,
+.duvidas {
+	grid-column: 1;
+}
+
+.perguntas-imagens {
+	grid-column: 2;
+	grid-row: 1 / span 3;
+	height: 100%;
+}
+
+.perguntas-imagens img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 16px;
+}
+
+.perguntas-titulo h2 {
+	color: var(--verde-brasil);
+	font-size: 2rem;
+	margin: 0 0 16px 0;
+	position: relative;
+}
+
+.perguntas-titulo h2::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 60px;
+	height: 4px;
+	background-color: var(--amarelo-solar);
+	border-radius: 2px;
+}
+
+.perguntas-titulo p {
+	color: var(--cor-texto);
+	margin-bottom: 0;
+}
+
+.perguntas details {
+	border-bottom: 1px solid #d1d5db;
+	padding: 24px 0;
+}
+
+.perguntas summary {
+	font-weight: 600;
+	color: var(--verde-brasil);
+	cursor: pointer;
+	font-size: 1.05rem;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.perguntas summary::after {
+	content: "▼";
+	font-size: 0.8rem;
+	color: var(--verde-brasil);
+	transition: transform 0.3s ease;
+}
+
+.perguntas details[open] summary::after {
+	transform: rotate(180deg);
+}
+
+.perguntas details p {
+	margin-top: 16px;
+	margin-bottom: 0;
+	color: #555;
+	line-height: 1.6;
+}
+
+.duvidas {
+	background-color: var(--verde-claro);
+	border-radius: 16px;
+	padding: 32px;
+	margin-top: 16px;
+}
+
+.duvida-titulo {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-bottom: 12px;
+}
+
+.duvida-titulo img {
+	width: 40px;
+	height: 40px;
+	object-fit: contain;
+}
+
+.duvida-titulo h2 {
+	font-size: 1.2rem;
+	color: var(--verde-brasil);
+	margin: 0;
+}
+
+.duvida-texto p {
+	margin: 0;
+	color: var(--cor-texto);
+	line-height: 1.5;
+	font-size: 0.95rem;
+}
+
+/* ===============================
+   PÁGINA DAS REGIÕES
+=============================== */
+
+/* --- MENU --- */
+.card-destinos {
+	background-color: var(--branco-neve);
+	border-radius: 50px;
+	padding: 24px 48px;
+	margin: -40px 5% 60px 5%;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	position: relative;
+	z-index: 10;
+	border: 1px solid #d1d5db;
+}
+
+.card-destinos ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.card-destinos a {
+	text-decoration: none;
+	color: var(--cor-texto);
+	font-weight: 600;
+	font-size: 1.05rem;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	transition: color 0.3s ease;
+}
+
+.card-destinos a:hover {
+	color: var(--verde-brasil);
+}
+
+.card-destinos .r-ativo {
+	color: var(--verde-brasil);
+	border-bottom: 2px solid var(--verde-brasil);
+	padding-bottom: 4px;
+}
+
+/* --- SEÇÃO SOBRE A REGIÃ --- */
+.sobre-regiao {
+	padding: 0 5% 40px 5%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 60px;
+	align-items: center;
+}
+
+.sobre-regiao-texto {
+	grid-column: 1;
+}
+
+.sobre-regiao-texto h2 {
+	font-size: 2.5rem;
+	color: var(--verde-brasil);
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+.sobre-regiao-texto p {
+	font-size: 1.05rem;
+	line-height: 1.6;
+	color: var(--cor-texto);
+}
+
+.sobre-regiao-imagem {
+	grid-column: 2;
+}
+
+.sobre-regiao-imagem img {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 24px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* --- SEÇÃO SOBRE A REGIÃO --- */
+.informacoes {
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 24px;
+}
+
+.informacoes-card {
+	background-color: var(--branco-neve);
+	border-radius: 16px;
+	padding: 32px 24px;
+	text-align: left;
+	border: 1px solid #ebebeb;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+	transition: transform 0.3s ease;
+}
+
+.informacoes-card:hover {
+	transform: translateY(-6px);
+}
+
+.informacoes-card h3 {
+	font-family: var(--fonte-texto);
+	font-size: 1rem;
+	color: var(--verde-brasil);
+	margin-top: 0;
+	margin-bottom: 12px;
+	font-weight: 600;
+}
+
+.informacoes-card p:nth-of-type(1) {
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: var(--cor-texto);
+	margin: 0 0 8px 0;
+}
+
+.informacoes-card p:nth-of-type(2) {
+	font-size: 0.85rem;
+	color: #666;
+	margin: 0;
+	line-height: 1.5;
+}
+
+/* --- SEÇÃO CULTURAS DA REGIÃO --- */
+.caracteristicas-regiao {
+	padding: 40px 5% 80px 5%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 32px;
+	align-items: start;
+}
+
+.geo-caracteristicas {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.geo-caracteristicas > div {
+	border: 2px solid #ebebeb;
+	border-radius: 16px;
+}
+
+.geo-caracteristicas h3 {
+	font-size: 1.25rem;
+	color: var(--verde-brasil);
+	margin: 0;
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.geo-imagem img {
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+	border-radius: 16px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.geo-texto {
+	font-size: 0.95rem;
+	color: var(--cor-texto);
+	line-height: 1.6;
+}
+
+/* ESTADOS */
+.regiao-carrossel {
+	padding: 40px 5% 80px 5%;
+	max-width: 1400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.regiao-carrossel h2 {
+	color: var(--verde-brasil);
+	font-size: 2rem;
+	margin-bottom: 40px;
+}
+
+.estados-lista {
+	display: flex;
+	gap: 24px;
+
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+
+	padding-bottom: 24px;
+}
+
+.estados-lista::-webkit-scrollbar {
+	display: none;
+}
+
+.card-estado {
+	flex: 0 0 220px;
+	scroll-snap-align: start;
+	background-color: var(--branco-neve);
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+	text-align: left;
+	transition: transform 0.3s ease;
+	border: 1px solid #ebebeb;
+}
+
+.card-estado:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card-estado img {
+	width: 100%;
+	height: 160px;
+	object-fit: cover;
+}
+
+.card-estado p:nth-of-type(1) {
+	font-weight: 700;
+	font-size: 1.1rem;
+	margin: 16px 16px 4px 16px;
+}
+
+.card-estado p:nth-of-type(2) {
+	color: var(--cor-texto);
+	font-size: 0.85rem;
+	margin: 0 16px 16px 16px;
 }
 
 /* ===============================
