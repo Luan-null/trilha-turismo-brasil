@@ -1647,6 +1647,243 @@ hr.linha-moderna {
 }
 
 /* ===============================
+   PÁGINA DAS REGIÕES
+=============================== */
+
+/* --- MENU --- */
+.card-destinos {
+	background-color: var(--branco-neve);
+	border-radius: 50px;
+	padding: 24px 48px;
+	margin: -40px 5% 60px 5%;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	position: relative;
+	z-index: 10;
+	border: 1px solid #d1d5db;
+}
+
+.card-destinos ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.card-destinos a {
+	text-decoration: none;
+	color: var(--cor-texto);
+	font-weight: 600;
+	font-size: 1.05rem;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	transition: color 0.3s ease;
+}
+
+.card-destinos a:hover {
+	color: var(--verde-brasil);
+}
+
+.card-destinos .r-ativo {
+	color: var(--verde-brasil);
+	border-bottom: 2px solid var(--verde-brasil);
+	padding-bottom: 4px;
+}
+
+/* --- SEÇÃO SOBRE A REGIÃ --- */
+.sobre-regiao {
+	padding: 0 5% 40px 5%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 60px;
+	align-items: center;
+}
+
+.sobre-regiao-texto {
+	grid-column: 1;
+}
+
+.sobre-regiao-texto h2 {
+	font-size: 2.5rem;
+	color: var(--verde-brasil);
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+.sobre-regiao-texto p {
+	font-size: 1.05rem;
+	line-height: 1.6;
+	color: var(--cor-texto);
+}
+
+.sobre-regiao-imagem {
+	grid-column: 2;
+}
+
+.sobre-regiao-imagem img {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 24px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* --- SEÇÃO SOBRE A REGIÃO --- */
+.informacoes {
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 24px;
+}
+
+.informacoes-card {
+	background-color: var(--branco-neve);
+	border-radius: 16px;
+	padding: 32px 24px;
+	text-align: left;
+	border: 1px solid #ebebeb;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+	transition: transform 0.3s ease;
+}
+
+.informacoes-card:hover {
+	transform: translateY(-6px);
+}
+
+.informacoes-card h3 {
+	font-family: var(--fonte-texto);
+	font-size: 1rem;
+	color: var(--verde-brasil);
+	margin-top: 0;
+	margin-bottom: 12px;
+	font-weight: 600;
+}
+
+.informacoes-card p:nth-of-type(1) {
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: var(--cor-texto);
+	margin: 0 0 8px 0;
+}
+
+.informacoes-card p:nth-of-type(2) {
+	font-size: 0.85rem;
+	color: #666;
+	margin: 0;
+	line-height: 1.5;
+}
+
+/* --- SEÇÃO CULTURAS DA REGIÃO --- */
+.caracteristicas-regiao {
+	padding: 40px 5% 80px 5%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 32px;
+	align-items: start;
+}
+
+.geo-caracteristicas {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.geo-caracteristicas > div {
+	border: 2px solid #ebebeb;
+	border-radius: 16px;
+}
+
+.geo-caracteristicas h3 {
+	font-size: 1.25rem;
+	color: var(--verde-brasil);
+	margin: 0;
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.geo-imagem img {
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+	border-radius: 16px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.geo-texto {
+	font-size: 0.95rem;
+	color: var(--cor-texto);
+	line-height: 1.6;
+}
+
+/* ESTADOS */
+.regiao-carrossel {
+	padding: 40px 5% 80px 5%;
+	max-width: 1400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.regiao-carrossel h2 {
+	color: var(--verde-brasil);
+	font-size: 2rem;
+	margin-bottom: 40px;
+}
+
+.estados-lista {
+	display: flex;
+	gap: 24px;
+
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+
+	padding-bottom: 24px;
+}
+
+.estados-lista::-webkit-scrollbar {
+	display: none;
+}
+
+.card-estado {
+	flex: 0 0 220px;
+	scroll-snap-align: start;
+	background-color: var(--branco-neve);
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+	text-align: left;
+	transition: transform 0.3s ease;
+	border: 1px solid #ebebeb;
+}
+
+.card-estado:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card-estado img {
+	width: 100%;
+	height: 160px;
+	object-fit: cover;
+}
+
+.card-estado p:nth-of-type(1) {
+	font-weight: 700;
+	font-size: 1.1rem;
+	margin: 16px 16px 4px 16px;
+}
+
+.card-estado p:nth-of-type(2) {
+	color: var(--cor-texto);
+	font-size: 0.85rem;
+	margin: 0 16px 16px 16px;
+}
+
+/* ===============================
    RESPONSIVIDADE (CELULARES)
 =============================== */
 
