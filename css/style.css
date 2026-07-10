@@ -135,6 +135,10 @@ header nav a:hover {
 	content: "✕";
 }
 
+.menu-checkbox {
+	display: none;
+}
+
 /* HERO */
 
 .hero {
@@ -1792,9 +1796,13 @@ hr.linha-moderna {
 	gap: 16px;
 }
 
-.geo-caracteristicas > div {
-	border: 2px solid #ebebeb;
+.geo-caracteristicas>div {
+	padding: 1px;
 	border-radius: 16px;
+	background-color: var(--branco-neve);
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 }
 
 .geo-caracteristicas h3 {
@@ -1818,6 +1826,7 @@ hr.linha-moderna {
 	font-size: 0.95rem;
 	color: var(--cor-texto);
 	line-height: 1.6;
+	padding: 10px 15px 20px;
 }
 
 /* ESTADOS */
@@ -1973,6 +1982,19 @@ hr.linha-moderna {
 
 	.menu-hamburguer {
 		display: block;
+	}
+
+	.menu-checkbox:checked~nav {
+		max-height: 400px;
+		opacity: 1;
+	}
+
+	.menu-checkbox:checked~.menu-hamburguer {
+		transform: rotate(90deg);
+	}
+
+	.menu-checkbox:checked~.menu-hamburguer::before {
+		content: "✕";
 	}
 
 	/* --- HERO --- */
@@ -2302,4 +2324,66 @@ hr.linha-moderna {
 		margin-top: 10px;
 		padding-top: 5px;
 	}
+
+	/* --- REGIÕES DESTAQUE --- */
+	.regioes-destaque {
+		padding: 20px 0;
+	}
+
+	.regioes-destaque h2 {
+		font-size: 1.5rem;
+		padding: 0 5%;
+		text-align: left;
+		margin-bottom: 20px;
+	}
+
+	.grid-regioes {
+		display: flex;
+		justify-content: flex-start;
+		gap: 16px;
+		padding: 0 0 24px;
+		margin: 0;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+	}
+
+	.grid-regioes::-webkit-scrollbar {
+		display: none;
+	}
+
+	.cards-regioes {
+		grid-column: auto;
+		flex: 0 0 280px;
+		scroll-snap-align: start;
+	}
+
+	.card-regiao {
+		height: 100%;
+	}
+
+	.card-regiao>img {
+		height: 160px;
+	}
+
+	.card-regiao:hover {
+		transform: translateY(0);
+	}
+
+	.card-regiao-conteudo {
+		padding: 16px;
+		align-items: flex-end;
+	}
+
+	.textos h3 {
+		font-size: 1.3rem;
+	}
+
+	.textos p {
+		font-size: 0.85rem;
+	}
+
+	.ilustracao-regiao {
+		width: 80px;
+	}
+
 }
